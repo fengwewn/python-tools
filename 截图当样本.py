@@ -1,11 +1,9 @@
 import cv2
 import os
-# 設定從哪顆鏡頭讀取影像，在括弧中填入先前查詢到的webcam編號
 cap = cv2.VideoCapture(0)
 # cap.set(3, 500) #长
 cap.set(4, 640)#宽
-# 讀取影像
-i = 0
+i = 0#相片起始编号
 def draw_cicle(event, x, y, flags, param):
     #print(x, y)
     global i
